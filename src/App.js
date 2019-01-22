@@ -14,16 +14,12 @@ render(); {
       <Wrapper>
         <Title>Friends List</Title>
         {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
+          <gameboard
             image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
           />
         ))}
       </Wrapper>
     );
 }
+
+export default App;
