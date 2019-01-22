@@ -1,8 +1,8 @@
 import React from "react";
 
-const wrapper = () => (
+const Wrapper = props => (
   <div className="container">
-    <div className="jumbotron">
+    {/* <div className="jumbotron">
       <h1>Hello, world!</h1>
       <p>I'm a jumbotron!</p>
       <p>
@@ -26,8 +26,9 @@ const wrapper = () => (
       <div className="card-body">
         <p className="card-text">Card content</p>
       </div>
-    </div>
+    </div> */}
+    {props.children}
   </div>
 );
 
-export default wrapper;
+export default Wrapper;

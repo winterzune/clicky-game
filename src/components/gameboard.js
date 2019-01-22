@@ -1,6 +1,6 @@
 import React from "react";
 
-const gameboard = props => (
+const GameBoard = props => (
     <div>
         (props.cards.map(element=> (
             (<card image element />)
@@ -8,4 +8,4 @@ const gameboard = props => (
     </div>
 );
 
-export default gameboard;
+export default GameBoard;
